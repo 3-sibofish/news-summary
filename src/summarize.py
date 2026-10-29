@@ -122,7 +122,7 @@ def prepare_digest(items: list[RawItem]) -> dict:
 def summarize(
     items: list[RawItem],
     api_key: str | None = None,
-    model: str = "moonshot-v1-128k",
+    model: str = "moonshot-v1-auto",
     language: str = "zh",
 ) -> str:
     """调用 Kimi 生成总结。
