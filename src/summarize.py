@@ -149,6 +149,7 @@ def summarize(
                 response = client.chat.completions.create(
                     model=model,
                     max_tokens=8192,
+                    extra_body={"thinking": {"type": "disabled"}},
                     messages=[
                         {"role": "system", "content": system_prompt},
                         {"role": "user", "content": payload},
